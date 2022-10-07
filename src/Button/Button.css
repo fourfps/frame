@@ -1,0 +1,74 @@
+.frame-button-base {
+    padding: 0.6em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    cursor: pointer;
+    font-family: "IBM Plex Sans";
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.frame-button-primary {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.1s ease-out;
+}
+
+.frame-button-secondary {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 10px;
+    transition: all 0.1s ease-out;
+}
+
+.frame-button-primary:hover {
+    background-color: var(--darker-blue);
+}
+
+.frame-button-secondary:hover {
+    background-color: var(--light-blue);
+}
+
+.frame-button-disabled {
+    opacity: 70%;
+    cursor: not-allowed;
+}
+
+.frame-button-disabled:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.frame-button-loading::before {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    content: " ";
+    margin-right: 8px;
+}
+
+.frame-button-loading {
+    cursor: progress;
+}
+
+.frame-button-loading:focus {
+    box-shadow: none !important;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
