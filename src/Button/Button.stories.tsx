@@ -7,7 +7,8 @@ export default {
   component: Button,
   argTypes: {
     disabled: "toggle",
-    loading: "toggle"
+    loading: "toggle",
+    width: "string"
   }
 };
 
@@ -16,5 +17,9 @@ Standard.args = {
   label: "Text",
   type: "primary",
   disabled: false,
-  loading: false
+  loading: false,
+  width: "auto"
 }
+
+
+export const SocialLogin = () => <Button socialLogin type={'primary'} label={'Continue with Apple'} />;

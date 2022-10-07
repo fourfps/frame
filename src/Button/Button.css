@@ -71,4 +71,27 @@
     100% {
         transform: rotate(360deg);
     }
-    } 
+} 
+
+.frame-button-wide {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.frame-button-social-login {
+    color: black !important;
+    border-color: var(--border-color) !important;
+    border-width: 1px;
+    background: white;
+    padding: 0.7em;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.frame-button-social-login:hover {
+    background: rgb(248, 248, 248);
+}
+
+.frame-button-social-login:focus {
+    box-shadow: none;
+}

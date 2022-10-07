@@ -4,6 +4,7 @@
     --blue: #266cf9;
     --darker-blue: #1d53c0;
     --light-blue: #266CF910;
+    --border-color: #00000029;
 }
 
 .focus-ring:active {
