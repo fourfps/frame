@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+:root {
+    --blue: #266cf9;
+    --darker-blue: #1d53c0;
+    --light-blue: #266CF910;
+    --border-color: #00000029;
+}
+
+* {
+    font-family: "IBM Plex Sans";
+}
+
+.focus-ring:active, input.focus-ring:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.frame-button-base {
+    padding: 0.6em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    cursor: pointer;
+    font-family: "IBM Plex Sans";
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.frame-button-primary {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.1s ease-out;
+}
+
+.frame-button-secondary {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 10px;
+    transition: all 0.1s ease-out;
+}
+
+.frame-button-primary:hover {
+    background-color: var(--darker-blue);
+}
+
+.frame-button-secondary:hover {
+    background-color: var(--light-blue);
+}
+
+.frame-button-disabled {
+    opacity: 70%;
+    cursor: not-allowed;
+}
+
+.frame-button-disabled:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.frame-button-loading::before {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-animation: rotation 1s linear infinite;
+            animation: rotation 1s linear infinite;
+    content: " ";
+    margin-right: 8px;
+}
+
+.frame-button-loading {
+    cursor: progress;
+}
+
+.frame-button-loading:focus {
+    box-shadow: none !important;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+} 
+
+.frame-button-wide {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.frame-button-social-login {
+    color: black !important;
+    border-color: var(--border-color) !important;
+    border-width: 1px;
+    background: white;
+    padding: 0.7em;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.frame-button-social-login:hover {
+    background: rgb(248, 248, 248);
+}
+
+.frame-button-social-login:focus {
+    box-shadow: none;
+}
+.frame-input {
+    border: 1px solid var(--border-color);
+    font-family: inherit;
+    padding: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+}
+
+.frame-input-label {
+    display: block;
+    font-size: 14px;
+    opacity: 70%;
+    margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=main.a67b9cb6.css.map*/
