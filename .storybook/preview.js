@@ -1,4 +1,5 @@
 import "../src/global.css";
+import "./fonts.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
