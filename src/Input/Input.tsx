@@ -1,5 +1,5 @@
 import React from "react";
-import "./Input.css"
+import "./Input.css";
 
 type InputProps = {
     label?: string,
@@ -10,7 +10,7 @@ type InputProps = {
     ref?: any,
 }
 
-export default function Input(props: InputProps) {
+export function Input(props: InputProps) {
     return(
         <>
             {props.label && 
