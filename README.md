@@ -1,5 +1,10 @@
-# frame
-The 4fps design system in React Components.
+<p align="center">
+<img style="width: 250px;height:250px;" src="/assets/frame-logo.png" />
+</p>
 
-Run ``npm run storybook`` to browse the components.
-To use them, install the package and include ``src/global.css``.
+## @4fps/frame
+
+Made with React and Storybook, this repository holds the 4fps Design System – frame. To maintain a consistent design language, we use these components in our products. We are still transitioning to frame internally, which is why this repository is WIP. We encourage you to not use frame in your own products. 
+
+Use ``npm run storybook`` to browse the components locally.
+To use them, install the package and include ``src/global.css`` in the header file.
