@@ -1,0 +1,19 @@
+.frame-input {
+    border: 1px solid var(--border-color);
+    font-family: inherit;
+    padding: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+}
+
+.frame-input-label {
+    display: block;
+    font-size: 14px;
+    opacity: 70%;
+    margin-bottom: 5px;
+}

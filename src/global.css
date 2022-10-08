@@ -7,7 +7,11 @@
     --border-color: #00000029;
 }
 
-.focus-ring:active {
+* {
+    font-family: "IBM Plex Sans";
+}
+
+.focus-ring:active, input.focus-ring:focus {
     border-color: #86b7fe;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
