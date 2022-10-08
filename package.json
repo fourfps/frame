@@ -2,6 +2,11 @@
   "name": "frame",
   "version": "0.1.0",
   "license": "MIT",
+  "author": "4fps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourfps/frame.git"
+  },
   "homepage": "https://fourfps.github.io/frame",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
