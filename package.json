@@ -7,9 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/fourfps/frame.git"
   },
-  "release": {
-    "branches": ["master"]
-  },
   "homepage": "https://fourfps.github.io/frame",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
