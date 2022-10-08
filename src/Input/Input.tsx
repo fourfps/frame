@@ -6,7 +6,8 @@ type InputProps = {
     placeholder: string,
     prefillValue?: string,
     type: ("email"|"text"),
-    width: string
+    width: string,
+    ref?: any,
 }
 
 export default function Input(props: InputProps) {
@@ -15,7 +16,7 @@ export default function Input(props: InputProps) {
             {props.label && 
                 <label className="frame-input-label">{props.label}</label>
             }
-            <input className="frame-input focus-ring" style={{width: props.width}} type={props.type} placeholder={props.placeholder} defaultValue={props.prefillValue} />
+            <input ref={props.ref} className="frame-input focus-ring" style={{width: props.width}} type={props.type} placeholder={props.placeholder} defaultValue={props.prefillValue} />
         </>
     );
 }

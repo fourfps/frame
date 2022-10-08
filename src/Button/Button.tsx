@@ -7,13 +7,14 @@ type ButtonProps = {
     loading?: boolean,
     disabled?: (true|false),
     width?: string,
-    socialLogin?: boolean
+    socialLogin?: boolean,
+    onClick?: () => void
 }
 
 export function Button(props: ButtonProps) {
     return(
         <>
-            <button className={"frame-button-base focus-ring " + "frame-button-" + props.type 
+            <button onClick={props.onClick} className={"frame-button-base focus-ring " + "frame-button-" + props.type 
             + (props.disabled ? " frame-button-disabled " : "")
             + (props.loading ? " frame-button-loading " : "")
             + (props.socialLogin ? " frame-button-social-login " : "")}
