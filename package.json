@@ -20,12 +20,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "build-storybook -o build && npm run build-package",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "predeploy": "build-storybook -s public",
+    "build-package": "BABEL_ENV=production babel src -d dist",
     "deploy": "gh-pages -d storybook-static"
   },
   "eslintConfig": {
@@ -71,7 +72,9 @@
     "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "semantic-release": "^19.0.5",
-    "webpack": "^5.74.0"
+    "webpack": "^5.74.0",    
+    "@babel/cli": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0"
   },  
   "plugins": [
     "@semantic-release/commit-analyzer",
