@@ -5,3 +5,7 @@ node_modules/
 public/
 storybook-static/
 src/
+*.stories.js
+.releaserc
+README.md
+tsconfig.json
