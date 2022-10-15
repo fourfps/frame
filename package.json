@@ -1,6 +1,6 @@
 {
   "name": "@4fps/frame",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "dist/index.js",
   "license": "MIT",
   "author": "4fps",
@@ -26,8 +26,9 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "predeploy": "build-storybook -s public",
-    "build-package": "tsc",
-    "deploy": "gh-pages -d storybook-static"
+    "build-package": "tsc && npm run copy-files",
+    "deploy": "gh-pages -d storybook-static",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "eslintConfig": {
     "extends": [
@@ -73,8 +74,10 @@
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "copyfiles": "^2.4.1",
     "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
+    "rimraf": "^3.0.2",
     "semantic-release": "^19.0.5",
     "webpack": "^5.74.0"
   },
